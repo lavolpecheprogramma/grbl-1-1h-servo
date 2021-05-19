@@ -385,6 +385,9 @@ void report_build_info(char *line)
   #ifdef COREXY
     serial_write('C');
   #endif
+  #ifdef WALL_PLOTTER
+    serial_write('G');
+  #endif
   #ifdef PARKING_ENABLE
     serial_write('P');
   #endif
